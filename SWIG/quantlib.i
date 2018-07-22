@@ -65,8 +65,8 @@ const char* __version__;
 %}
 #endif
 
-//#if defined(SWIGPYTHON)
-//%feature("autodoc");
-//#endif
+#if defined(SWIGPYTHON)
+%feature("autodoc" , "1");
+#endif
 
 %include ql.i
